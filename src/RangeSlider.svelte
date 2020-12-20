@@ -658,7 +658,11 @@
   on:touchstart|preventDefault={sliderInteractStart}
   on:mousedown={sliderInteractStart}
   on:touchend|preventDefault={sliderInteractEnd}
-  on:mouseup={sliderInteractEnd}>
+  on:mouseup={sliderInteractEnd}
+  on:touchstart
+  on:mousedown
+  on:touchend
+  on:mouseup>
   {#each values as value, index}
     <span
       role="slider"
